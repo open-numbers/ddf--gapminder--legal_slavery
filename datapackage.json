@@ -44,7 +44,7 @@
       "schema": {
         "fields": [
           {
-            "name": "﻿geo"
+            "name": "geo"
           },
           {
             "name": "year"
@@ -101,30 +101,10 @@
       },
       {
         "primaryKey": [
-          "geo",
-          "year"
-        ],
-        "value": "﻿geo",
-        "resources": [
-          "legal_slavery--by--geo--year"
-        ]
-      },
-      {
-        "primaryKey": [
           "global",
           "year"
         ],
         "value": "legal_slavery",
-        "resources": [
-          "legal_slavery--by--geo--year"
-        ]
-      },
-      {
-        "primaryKey": [
-          "global",
-          "year"
-        ],
-        "value": "﻿geo",
         "resources": [
           "legal_slavery--by--geo--year"
         ]
