@@ -1,0 +1,10 @@
+concept,concept_type,domain,name,description,indicator_url
+geo,entity_domain,,Geographic location,,
+global,entity_set,geo,Global geographic locations,,
+year,time,,Year,,
+legal_slavery,measure,,Number of countries in which slavery is legal,"Counting the number of countries where forced labour is legal, which means: there's no law or constitution prohibiting forced labor or serfdom, and the country hasn't yet signed any UN convention banning forced labor. And then, if state owned companies or the government itself is accused of practicing forced labor, while ILO can't investigate it, then slavery here is considered legal, despite what it says on the legal documents.","https://www.gapminder.org/data/documentation/legal-slavery/"
+name,string,,Name,,
+domain,string,,Domain,,
+unicode_region_subtag,string,,Unicode Region Subtag,,
+latitude,measure,,Latitude,,
+longitude,measure,,Longitude,,

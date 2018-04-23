@@ -1,0 +1,273 @@
+{
+  "name": "ddf--gapminder--legal_slavery",
+  "title": "ddf--gapminder--legal_slavery",
+  "description": "",
+  "version": "0.0.1",
+  "language": {
+    "id": "en",
+    "name": "English"
+  },
+  "translations": [],
+  "license": "",
+  "author": "",
+  "resources": [
+    {
+      "path": "ddf--concepts.csv",
+      "name": "ddf--concepts",
+      "schema": {
+        "fields": [
+          {
+            "name": "concept"
+          },
+          {
+            "name": "concept_type"
+          },
+          {
+            "name": "domain"
+          },
+          {
+            "name": "name"
+          },
+          {
+            "name": "description"
+          },
+          {
+            "name": "indicator_url"
+          }
+        ],
+        "primaryKey": "concept"
+      }
+    },
+    {
+      "path": "ddf--datapoints--legal_slavery--by--geo--year.csv",
+      "name": "legal_slavery--by--geo--year",
+      "schema": {
+        "fields": [
+          {
+            "name": "﻿geo"
+          },
+          {
+            "name": "year"
+          },
+          {
+            "name": "legal_slavery"
+          }
+        ],
+        "primaryKey": [
+          "geo",
+          "year"
+        ]
+      }
+    },
+    {
+      "path": "ddf--entities--geo.csv",
+      "name": "geo",
+      "schema": {
+        "fields": [
+          {
+            "name": "geo"
+          },
+          {
+            "name": "is--global"
+          },
+          {
+            "name": "name"
+          },
+          {
+            "name": "unicode_region_subtag"
+          },
+          {
+            "name": "latitude"
+          },
+          {
+            "name": "longitude"
+          }
+        ],
+        "primaryKey": "geo"
+      }
+    }
+  ],
+  "ddfSchema": {
+    "datapoints": [
+      {
+        "primaryKey": [
+          "geo",
+          "year"
+        ],
+        "value": "legal_slavery",
+        "resources": [
+          "legal_slavery--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo",
+          "year"
+        ],
+        "value": "﻿geo",
+        "resources": [
+          "legal_slavery--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "global",
+          "year"
+        ],
+        "value": "legal_slavery",
+        "resources": [
+          "legal_slavery--by--geo--year"
+        ]
+      },
+      {
+        "primaryKey": [
+          "global",
+          "year"
+        ],
+        "value": "﻿geo",
+        "resources": [
+          "legal_slavery--by--geo--year"
+        ]
+      }
+    ],
+    "entities": [
+      {
+        "primaryKey": [
+          "geo"
+        ],
+        "value": "is--global",
+        "resources": [
+          "geo"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo"
+        ],
+        "value": "latitude",
+        "resources": [
+          "geo"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo"
+        ],
+        "value": "longitude",
+        "resources": [
+          "geo"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo"
+        ],
+        "value": "name",
+        "resources": [
+          "geo"
+        ]
+      },
+      {
+        "primaryKey": [
+          "geo"
+        ],
+        "value": "unicode_region_subtag",
+        "resources": [
+          "geo"
+        ]
+      },
+      {
+        "primaryKey": [
+          "global"
+        ],
+        "value": "is--global",
+        "resources": [
+          "geo"
+        ]
+      },
+      {
+        "primaryKey": [
+          "global"
+        ],
+        "value": "latitude",
+        "resources": [
+          "geo"
+        ]
+      },
+      {
+        "primaryKey": [
+          "global"
+        ],
+        "value": "longitude",
+        "resources": [
+          "geo"
+        ]
+      },
+      {
+        "primaryKey": [
+          "global"
+        ],
+        "value": "name",
+        "resources": [
+          "geo"
+        ]
+      },
+      {
+        "primaryKey": [
+          "global"
+        ],
+        "value": "unicode_region_subtag",
+        "resources": [
+          "geo"
+        ]
+      }
+    ],
+    "concepts": [
+      {
+        "primaryKey": [
+          "concept"
+        ],
+        "value": "concept_type",
+        "resources": [
+          "ddf--concepts"
+        ]
+      },
+      {
+        "primaryKey": [
+          "concept"
+        ],
+        "value": "description",
+        "resources": [
+          "ddf--concepts"
+        ]
+      },
+      {
+        "primaryKey": [
+          "concept"
+        ],
+        "value": "domain",
+        "resources": [
+          "ddf--concepts"
+        ]
+      },
+      {
+        "primaryKey": [
+          "concept"
+        ],
+        "value": "indicator_url",
+        "resources": [
+          "ddf--concepts"
+        ]
+      },
+      {
+        "primaryKey": [
+          "concept"
+        ],
+        "value": "name",
+        "resources": [
+          "ddf--concepts"
+        ]
+      }
+    ]
+  }
+}
