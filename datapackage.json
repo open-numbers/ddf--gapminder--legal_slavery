@@ -32,7 +32,7 @@
             "name": "description"
           },
           {
-            "name": "indicator_url"
+            "name": "source_url"
           }
         ],
         "primaryKey": "concept"
@@ -234,7 +234,7 @@
         "primaryKey": [
           "concept"
         ],
-        "value": "indicator_url",
+        "value": "source_url",
         "resources": [
           "ddf--concepts"
         ]

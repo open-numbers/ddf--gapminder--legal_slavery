@@ -1,6 +1,6 @@
-concept,concept_type,domain,name,description,indicator_url
+concept,concept_type,domain,name,description,source_url
 description,string,,,,
-indicator_url,string,,,,
+source_url,string,,,,
 geo,entity_domain,,Geographic location,,
 global,entity_set,geo,Global geographic locations,,
 year,time,,Year,,
